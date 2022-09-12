@@ -20,7 +20,7 @@
 				<form action="/" method="post">
 					<div class="input-group">
 						<span class="input-group-text">Text</span>
-						<textarea class="form-control" name="texte" autofocus rows="15">{{textres}}</textarea>
+						<textarea class="form-control" name="texte" placeholder="{% if erroren %}Please enter valid ascii text!{% else %}Enter text here{% endif %}" autofocus rows="15">{{textres}}</textarea>
 					</div>
 					<br>
 					<div class="btn-group">
@@ -32,7 +32,7 @@
 					<br>
 					<div class="input-group">
 						<span class="input-group-text">Base64</span>
-						<textarea class="form-control" name="basee" rows="15">{{baseres}}</textarea>
+						<textarea class="form-control" placeholder="{% if errorde %}Please enter valid Base64 code!{% else %}Enter Base64 code here{% endif %}" name="basee" rows="15">{{baseres}}</textarea>
 					</div>
 				</form>
 			</div>
